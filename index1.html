@@ -1,7 +1,12 @@
 <html>
 <head>
-<script type="text/javascript" src="p5.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
 
+<script type="text/javascript" src="p5.js"></script>
+	</head>
  <body>
 	<style>
 	header{
@@ -101,6 +106,28 @@ li a:hover:not(.active) {
 <div style="margin-left: 11%; padding-top: 0px; height: 180px;">
 	
 <h2><font size="6.5">Games/Animations</font></h2>
+    <script src="sketch.js"></script>
+var r;
+var g;
+var b;
+var randomSize;
+
+r=0;
+g=0;
+b=0;
+randomSize=0;
+
+function mouseDragged(){
+if(displayH < (mouseY-100) && (mouseY+100) < displayHx2){
+        r = random(0,255);
+        g = random(0,255);
+        b = random(0,255);
+        randomSize = random(0,100);
+        noStroke();
+        fill(mouseX/1.5,mouseY/1.5,mouseY/1.5);
+        ellipse((mouseX/2), (mouseY/2), randomSize, randomSize);
+}
+}
 
 </body> 
 </html>
