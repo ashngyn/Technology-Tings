@@ -4,12 +4,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/addons/p5.dom.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/addons/p5.sound.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src=”p5.js”></script>
   </head>
   <body>
     <script src="sketch.js"></script>
     <script id="script" type="text/javascript">
-    
- var x;
+
+	//anything after the “//” in the line is ignored as a comment
+	//before anything, add your variables as “var …”
+var x;
 var displayH; //represents one screen height
 var displayHx2; //Hx2 x3 x4 represent additional space when we scroll
 var displayHx3;
@@ -35,9 +38,11 @@ b=0;
 randomSize=0;
 fill(255, 153, 0);
 rect(0, displayHx2, displayWidth, displayH);
+//remember syntax is rect(top left x value, top left y value, width, height)
+img = loadImage('food.jpg');
 }
 
-function draw(){ //what happens in loop constantly and forever while site is loaded
+function draw(){ 
 noStroke();
 fill(196, 239, 255);
 rect(0,0, displayWidth, displayHeight);
@@ -121,7 +126,7 @@ if(displayH < (mouseY-100) && (mouseY+100) < displayHx2){
         fill(r,g,b);
         ellipse((mouseX/2), (mouseY/2), randomSize, randomSize);
 }
-} 
+}    
 
 
 </script>
