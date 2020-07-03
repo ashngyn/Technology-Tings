@@ -84,26 +84,19 @@ li a:hover:not(.active) {
   font-size: 36px;
   margin-left: 50px;
 }
-#hobbies{
-font-family: 'Roboto Slab', serif;
-border-collapse: collapse;
-width: 100%;
-color: white;
-}
-
-#hobbies td, #hobbies th {
+table, td, th {  
   border: 1px solid #ddd;
-  padding: 8px;
+  text-align: left;
+color: purple;
 }
 
-#hobbies tr:nth-child(even){background-color: #f2f2f2;}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
 
-#hobbies tr:hover {background-color: #ddd;}
-
-#hobbies th, td {
+th, td {
   padding: 15px;
-  text-align: left;
-  color: white;
 }
   </style>
   <header>
@@ -120,7 +113,7 @@ color: white;
 <div style="margin-left: 11%; padding-top: 0px; height: 180px;">
 <h2> <font size="6.5">Interests</font></h2>
 <h4> <style="color: #551992"> Hobbies: <h4>
-<table id="hobbies">
+<table>
   <tr>
     <th style="text-align: left">Type</th>
     <th style="text-align: left">Field</th> 
