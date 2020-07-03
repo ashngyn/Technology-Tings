@@ -1,7 +1,7 @@
 <html>
 <head>
 <body>
-	<style>
+<style>
 	header{
 	background-color: #CB9DF3;
 	padding: 6px;
@@ -87,7 +87,29 @@ li a:hover:not(.active) {
 table, th, td {
   border: 1px solid black;
 }
+#hobbies{
+font-family: 'Roboto Slab', serif;
+border-collapse: collapse;
+width: 100%;
+font-color: black;
+}
 
+#hobbies td, #hobbies th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#hobbies tr:nth-child(even){background-color: #f2f2f2;}
+
+#hobbies tr:hover {background-color: #ddd;}
+
+#hobbies th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
   </style>
   <header>
 <h1 align="center">Who Dis Girl?</h1>
@@ -102,8 +124,8 @@ table, th, td {
 	
 <div style="margin-left: 11%; padding-top: 0px; height: 180px;">
 <h2> <font size="6.5">Interests</font></h2>
-<h3> <style="color: #551992"> Hobbies: <h3>
-<table style="width:100%">
+<h4> <style="color: #551992"> Hobbies: <h4>
+<table id="hobbies">
   <tr>
     <th style="text-align: left">Type</th>
     <th style="text-align: left">Field</th> 
