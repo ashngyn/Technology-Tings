@@ -107,5 +107,16 @@ li a:hover:not(.active) {
   
     <script src="sketch.js"></script>
 
+function mouseDragged(){
+if(displayH < (mouseY-100) && (mouseY+100) < displayHx2){
+        r = random(0,255);
+        g = random(0,255);
+        b = random(0,255);
+        randomSize = random(0,100);
+        noStroke();
+        fill(r,g,b);
+        ellipse((mouseX/2), (mouseY/2), randomSize, randomSize);
+}
+
 </body>
 </html>
